@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyExpressFormApp</title>
+<style>
+    body{
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        background-color: darkgray;
+        width: 100vw;
+        height: 10vh;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin-top: 35px;
+    }
+    .contentDiv h1{
+        text-align: center;
+        font-style: italic;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .formContainer{
+        border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: absolute;
+  left: 35%;
+  top: 140%;
+    }
+input {
+    width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  width: 25%;
+  background-color: darkgray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body >
+    <nav>
+        <h3>myNav</h3>
+        <ul>
+            <li>Home</li>
+            <li>UserView</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="contentDiv">
+        <h1>MyExpressFormApp</h1>
+        <div class="formContainer">
+         <form action="" method="post" id="add-form" enctype="multipart/form-data">
+            <div class="formItemDiv">
+                <label for="name">Name: </label>
+                <input type="text" name="name" placeholder="Enter name" value="" required  />
+            </div>
+            <div class="formItemDiv">
+                <label for="email">Email: </label>
+                <input type="email" name="Email" placeholder="Enter email" value="" required  />
+            </div>
+            <div class="formItemDiv">
+                <label for="tel">phone: </label>
+                <input type="tel" name="phone" placeholder="Enter phone" value="" required  />
+            </div>
+            <div class="formItemDiv">
+                <label for="image" >Selcet Image</label>
+                <input type="file" name="image" />
+                <img src="" width="100">
+            </div>
+             <div class="formItemDivBtn">
+                 <button type="submit" name="submit" value="update User">Submit</button>
+             </div>
+         </form>
+        </div>
+    </div>
+</body>
+</html>
